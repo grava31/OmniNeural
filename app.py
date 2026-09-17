@@ -52,7 +52,7 @@ class OmniNeuralCore:
 class OmniNeuralSynthesizer:
     def __init__(self, api_key: str):
         self.client = genai.Client(api_key=api_key)
-        self.model_name = 'gemini-2.5-flash'  # الموديل المعتمد للسرعة والدقة
+        self.model_name = 'gemini-3.6-flash'  # الموديل المعتمد للسرعة والدقة
         self.core = OmniNeuralCore()
 
     def synthesize_answer(self, user_query: str, audience_mode: str = "auto") -> str:
